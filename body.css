@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: slategray;
+}
+
+button {
+    
+    font-size: 16px;
+    cursor: pointer;
+    shape-outside:margin-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+button:active {
+    background-color: #3e8e41; /* Even darker green on click */
+    box-shadow: 0 5px #666; /* Add a shadow */
+    transform: translateY(4px); /* Move button down */
+}
+img {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 20px;
+}
+#bud
+{
+    padding-top: 12%;
+    animation:slide-in 0.5s ease forwards;
+}
+@keyframes slide-in {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+
+#vid {
+    margin-top: 20px;
+}
+#id1{
+    padding-left: 80%;
+    display:ruby-base;
+}
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinkCaret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.typing-effect {
+    overflow:hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    width: 100%;
+    display:inline-block;
+    animation: typing 7s steps(40, end), blinkCaret .75s step-end forwards;
+}
+
+
+/* Neon Glow Animation */
+@keyframes neonGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+    }
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    }
+}
+
+.neon-glow {
+    color: #fff;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+#id4
+{
+    padding-left: 80%;
+}
+#cake
+{
+    width: auto;
+    height: auto;
+    padding-top: 25%;
+    opacity: 1;
+    transition: opacity 1s ease-in-out, visibility 0s 1s; /* Transition opacity with delay */
+}
+#cake.hidden
+{
+    opacity: 0;
+    visibility: hidden; 
+}
+@keyframes gradient-change {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  .container
+{
+    background-color: #fff;
+}
+  #ms {
+
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text; /* For Safari compatibility */
+    background-clip: text; /* Clip background to text */
+    color: transparent; /* Make text transparent */
+    animation: gradient-change 2s infinite linear;
+    line-height: 1.5;
+    justify-content: flex-start;
+  }
+  @keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+.gif {
+    animation: move 3s ease infinite; /* adjust duration and timing function as needed */
+    margin-left: 50px;
+}
+  
+  
+
